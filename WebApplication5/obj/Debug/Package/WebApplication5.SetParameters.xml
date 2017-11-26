@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/" />
+  <setParameter name="DefaultConnection-Web.config Connection String" value="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WebApplication5-20170622022603.mdf;Initial Catalog=aspnet-WebApplication5-20170622022603;Integrated Security=True" />
+  <setParameter name="ConnectionString-Web.config Connection String" value="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot;C:\Users\user\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Giit.accdb&quot;" />
+  <setParameter name="ConnectionString2-Web.config Connection String" value="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot;C:\Users\user\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Giit.accdb&quot;" />
+</parameters>

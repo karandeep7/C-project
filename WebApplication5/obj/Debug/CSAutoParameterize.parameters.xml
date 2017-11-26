@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WebApplication5-20170622022603.mdf;Initial Catalog=aspnet-WebApplication5-20170622022603;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\Documents\\Visual\ Studio\ 2015\\Projects\\WebApplication5\\WebApplication5\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionString-Web.config Connection String" description="ConnectionString Connection String used in web.config by the application to access the database." defaultValue="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot;C:\Users\user\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Giit.accdb&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\Documents\\Visual\ Studio\ 2015\\Projects\\WebApplication5\\WebApplication5\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionString2-Web.config Connection String" description="ConnectionString2 Connection String used in web.config by the application to access the database." defaultValue="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot;C:\Users\user\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Giit.accdb&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\Documents\\Visual\ Studio\ 2015\\Projects\\WebApplication5\\WebApplication5\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString2']/@connectionString" />
+  </parameter>
+</parameters>

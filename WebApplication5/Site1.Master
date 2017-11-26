@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication5.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <style>
+         h2 {
+            text-shadow:  2px 4px 3px rgba(0,0,0,0.3);
+         }
+        .dropdown {
+            position: relative;
+            display: inline-block; 
+            padding: 1px 3px;           
+        }
+        .dropdownbtn {
+            background-color: #333333;
+            color: #969696;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: none;
+        }
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            background-color: #0064D2;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            z-index: 1;
+            min-width: 150px;
+            color: white;
+            //opacity: 0.9;
+            font-family: 'Monotype Corsiva';
+            font-size: 20px;
+        }
+        .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                border-style: solid;
+                border-width: 2px 0 0 0;
+                border-top-color: #8C5ABD;
+        }
+        .dropdown-content a:hover {
+            //transition: background 0.3s;
+            background-color: #333333;
+            border-radius: 18px;
+            transform: scale(1.1,1.1);
+            transform-style:preserve-3d;
+            transform-origin: inherit;
+        }
+        .dropdown:hover .dropdown-content {  
+            transition: background 0.3s;
+            display: block;
+        }
+        .dropdown:hover .dropdownbtn {
+            transform: scale(1.15,1.15);
+            transform-style: preserve-3d;
+            transform-origin: inherit;
+            transition: color 0.3s;
+            color: white;
+            border-radius: 10px;
+            transition: background 0.3s;
+            background-color: #FFA500;
+        }
+         .auto-style2 {
+             color: #FFFFFF;
+         }
+         .auto-style3 {
+             color: #000000;
+             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+         }
+    </style>
+</head>
+<body style="margin:0; padding:0; background-color: #66029F;">
+    <form id="form1" runat="server">
+    <div>
+        <div style="background-color: #333333; border-style: solid;display: inline; border-bottom-color: #0064D2; border-width: 0 0 5px 0;border-top-style:none; border-radius:10px;position: fixed;width: 100%;">
+         <div style="background-color: #FFA500; border-style: none;" aria-expanded="false" aria-live="off" aria-orientation="horizontal">
+
+             &nbsp;<h2 style="font-family:'Monotype Corsiva'; color:#FBFB00; display:inline; margin-top: 0px; font-size:xx-large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style2">&nbsp;</span><span class="auto-style3">ATTENDANCE MANAGEMENT SYSTEM</span></h2> &nbsp;</div>
+            <center>
+            <div class="dropdown" aria-dropeffect="popup">
+                <asp:Button ID="Button3" runat="server" Text="Home" class="dropdownbtn" PostBackUrl="~/Welcome.aspx" />
+            </div>
+            <div class="dropdown" aria-dropeffect="popup" >
+                <asp:Button ID="Button1" runat="server" Text="Forms" class="dropdownbtn" />
+                <div class="dropdown-content">
+                    <a href="Course">Course Entry</a>
+                    <a href="Session">Session Entry</a>
+                    <a href="Faculty">Faculty Entry</a>
+                    <a href="Student">Student Entry</a>
+                    <a href="Results">Results</a>
+                    <a href="Attendance">Attendance Entry</a>
+                </div>
+            </div>
+            <div class="dropdown" aria-dropeffect="popup">
+                <asp:Button ID="Button2" runat="server" Text="InfraStructure" class="dropdownbtn" />
+                <div class="dropdown-content">
+                    <a href="Infrastructure">Master</a>
+                    <a href="InfraCategory">Category</a>
+                    <a href="InfraFacility">Facility</a>
+                    <a href="InfraSitting">Sitting</a>
+                    <a href="InfraTv">TV</a>
+                    <a href="InfraFloor">Floor</a>
+                    <a href="InfraAcType">AC Type</a>
+                    <a href="InfraBoard">Board Type</a>
+                    <a href="InfraCam">CCTV</a>
+                </div>
+            </div>
+            <div class="dropdown" aria-dropeffect="popup">
+                <asp:Button ID="Button5" runat="server" Text="Logout" class="dropdownbtn" PostBackUrl="~/Home.aspx" />
+            </div>
+                <asp:Label ID="Label1" runat="server" Text="Contact us: 0657-6510104, 9798365365" class="dropdownbtn" style="float: right; cursor: default;"></asp:Label>
+            </center>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
